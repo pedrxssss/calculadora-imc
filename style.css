@@ -1,0 +1,129 @@
+:root {
+    /* Fonte */
+    --fonte: 'Roboto', sans-serif;
+
+    /* Cores de fundo */
+    --bg-primaria: #2B59C3;
+    --bg-secundaria: #585563;
+    --bg-button: #ABC8C7;
+
+    /* Cores de fonte */
+    --cor-primaria: #A5B5BF;
+    --cor-secundaria: #B0A1BA;
+    
+    /* 
+    --cor-terciaria: ;
+    --cor-quaternaria: ; 
+    */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CORPO */
+body {
+    font-family: var(--fonte);
+    color: var(--cor-primaria);
+    background: var(--bg-primaria);
+    width: 100vw;
+}
+
+/* Tag MAIN */
+.tela-principal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* SECTION DO FORMULARIO  */
+.form {
+    background-color: var(--bg-secundaria);
+    color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    /* width: 250px; */
+    padding: 1.5rem;
+    border-radius: .5rem;
+    margin: 100px auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* TODO O FORMULARIO */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .4rem;
+    text-transform: uppercase;
+}
+
+.input {
+    padding: .2rem;
+    border-radius: 6px;
+    border: none;
+    filter: drop-shadow(1px 1px 1px var(--cor-primaria));
+}
+
+.group-botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.botao {
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    border: none;
+    filter: drop-shadow(1px 3px 3px var(--cor-secundaria));
+    color: var(--cor-primaria);
+    background-color: var(--bg-primaria);
+    cursor: pointer;
+}
+
+.botao:hover {
+    color: var(--bg-primaria);
+    background-color: var(--cor-primaria);
+    transition: .2s;
+
+}
+
+.group-imc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* RESULTADO DO IMC */
+
+#id {
+    text-align: center;
+}
+
+.pessoa  {
+    padding: .8rem;
+    color: black;
+    text-transform: uppercase inherit;
+}
+
+.pessoa:nth-child(even) {
+    background: var(--bg-primaria);
+}
+
+.pessoa:nth-child(odd) {
+    background-color: var(--cor-primaria);
+}

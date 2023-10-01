@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Exercício Aula 14</title>
+</head>
+
+<body>
+    <main class="tela-principal">
+        <!-- FORMULARIO -->
+        <section class="form">
+            <form action="" class="formulario">
+                <h1>Calculadora de IMC</h1>
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" class="input" autofocus required>
+                </div>
+                <div class="form-group">
+                    <label for="idade">Idade</label>
+                    <input type="number" min="0" max="120" name="idade" id="idade" class="input" required>
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso</label>
+                    <input type="number" min="0.0" max="300.0" name="peso" id="peso" class="input" required>
+                </div>
+                <div class="form-group">
+                    <label for="altura">Altura</label>
+                    <input type="number" min="0.0" max="3.0" name="altura" id="altura" class="input" required>
+                </div>
+                <!-- BOTOES -->
+                <div class="form-group group-botoes">
+                    <button type="submit" class="btnEnviar botao">Enviar</button>
+                    <button type="reset" class="btnReset botao">Limpar</button>
+                </div>
+                <div class="form-group group-imc">
+                    <label for="imc">IMC</label>
+                    <input type="number" name="imc" id="resultadoimc" value="0.0" class="input" disabled>
+                    <span class="aviso">Aviso</span>
+                </div>
+            </form>
+
+            <!-- RESULTADO DO IMC -->
+            <section class="resultado">
+                <h2 id="id" class="pessoa">IMC</h2>
+                <p id="nome" class="pessoa"></p>
+                <p id="idade" class="pessoa"></p>
+                <p id="peso" class="pessoa"></p>
+                <p id="altura" class="pessoa"></p>
+                <p id="imc" class="pessoa"></p>
+            </section>
+        </section>
+    </main>
+
+    <!-- Javascript -->
+    <script src="app.js"></script>
+</body>
+
+</html>
